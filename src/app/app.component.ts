@@ -1,5 +1,4 @@
 import {Component, NgZone} from '@angular/core';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,7 +6,7 @@ import {Component, NgZone} from '@angular/core';
 })
 
 export class AppComponent {
-  gapi;
+
 
   constructor(ngZone: NgZone) {
     window['onSignIn'] = (user) => ngZone.run(() => this.onSignIn(user));
